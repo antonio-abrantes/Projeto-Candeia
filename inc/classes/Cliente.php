@@ -33,7 +33,7 @@ class Cliente {
 
         //var_dump($this->DT);
 
-        $query = "INSERT INTO clientes (nome,email,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia, created_at,updated_at) VALUES ('".$this->dados['nome']."',null,'".$this->dados['email']."','".$this->dados['telefone']."',null,null,null,null,null,null,null,'".$created_at."','".$updated_at."');";
+        $query = "INSERT INTO clientes (nome,email,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia, created_at,updated_at) VALUES ('".$this->dados['nome']."','".$this->dados['email']."', null ,'".$this->dados['telefone']."',null,null,null,null,null,null,null,null,null);";
         $this->sql->query($query);
     }
 
