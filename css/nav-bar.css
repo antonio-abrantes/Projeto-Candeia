@@ -1,0 +1,198 @@
+
+/* Bootstrap navbar Persolanizado */
+
+.navbar{
+    border: none;
+    border-radius: 0 0 0 0;
+    margin-bottom: 0;
+}
+.my-navbar{
+    border: 0;
+    border-radius: 0;
+    background: none;
+}
+
+.navbar-nav>li>a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-brand {
+    padding-bottom: 10px;
+}
+
+/* Logo Principal - tamanho */
+.navbar-brand>img {
+    margin-top: 0;  /* POSIÇÃO DO LOGO */
+    height: 75%;
+    margin-left: -5px;
+    padding: 10px;
+    width: auto;
+}
+
+ @media (max-width: 990px) {
+     .navbar-brand>img {
+         margin-top: 10px;  /* POSIÇÃO DO LOGO */
+         height: 70%;
+         margin-left: -5px;
+         padding: 10px;
+         width: auto;
+     }
+ }
+
+.nav-pequeno .navbar-brand{
+    background: url(../imagens/logopp.png) center / contain no-repeat;
+    width: 200px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.nav-pequeno{
+    margin-bottom: 0;
+}
+
+/* ALTURA DO CABEÇALHO DA PAGINA */
+.nav-logo .navbar-brand {
+    height: 120px;
+    z-index: 0;
+}
+
+.nav-logo .nav >li >a {
+    color: dodgerblue;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+
+.nav-logo .nav >li >a:hover {
+    /*color:#ff0000;*/
+}
+
+.nav-logo .navbar-toggle {
+    padding: 10px;
+    margin: 25px 15px 25px 0;
+}
+
+/* Menu de navegção superior */
+.my-nav{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    z-index: 9999;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.my-my-p{
+    background: none;
+    border: 0;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.my_navbar{
+    border: 0;
+    border-radius: 0;
+    background: none;
+}
+
+.ul-nav-grande {
+    /*background-color: #e9ae4a; cor alternativa - laranja mais clara*/
+    /*font-size: 80%;   tamanho da fonte do navbar grande*/
+    background-color: #e0922e;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.nav-grande .nav >li >a {
+    color: #fffdf4;
+    font-weight: bold;
+}
+
+.nav-grande .nav >li >.nav-inicio:hover  {
+    color: #5873db;
+    border-radius: 25px 0 0 0;
+    background-color: #fdad2f;
+}
+
+.nav-grande .nav >li >.nav-inicio-sub:hover  {
+    color: #5873db;
+    border-radius: 25px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.nav-grande .nav >li >.nav-meio:hover  {
+    color: #5873db;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.nav-grande .nav >li >.nav-final:hover  {
+    color: #5873db;
+    border-radius: 0px 25px 0px 0px;
+    background-color: #fdad2f;
+}
+
+/* BORDAS DO MENU DAS SUBSECOES*/
+
+.nav-inicio-sub{
+    color: #5873db;
+    border-radius: 25px 0px 0px 0px;
+    background-color: #e0922e;
+}
+
+.active-inicio{
+    color: #5873db;
+    border-radius: 25px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.active-servico{
+    color: #5873db;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.active-o-estudio{
+    color: #5873db;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.active-portfolio{
+    color: #5873db;
+    border-radius: 0px 0px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.active-orcamento{
+    color: #5873db;
+    border-radius: 0px 25px 0px 0px;
+    background-color: #fdad2f;
+}
+
+.active a:hover{
+    background: none;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 50px;
+}
+.navbar-alignit .navbar-brand {
+    top: 50%;
+    display: block;
+    position: relative;
+    height: auto;
+    transform: translate(0,-50%);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    z-index: 9999;
+}

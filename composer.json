@@ -1,0 +1,12 @@
+{
+    "name": "portfolio/casa-das-marmitas",
+    "description": "Portfolio quinto semestre - Casa das Marmitas",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonio Abrantes",
+            "email": "antonio_abrantes@hotmail.com.br"
+        }
+    ],
+    "require": {}
+}
