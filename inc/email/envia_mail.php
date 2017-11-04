@@ -16,7 +16,7 @@ $Telefone       = $_POST["inputTel"];  //Pega numero do telafone
      $cliente->dados['email'] = $Email;
      $cliente->dados['telefone'] = $Telefone;
 
-     var_dump($cliente);
+     //var_dump($cliente);
 
      $cliente->gravarCliente();
 
