@@ -1,6 +1,12 @@
 <!-- Inicio do rodapé da pagina  -->
 
 <section id="section-rodape">
+
+    <!-- Modal de contato -->
+    <?php
+        require_once 'view/modal-contato.php';
+    ?>
+
     <div class="container-fluid faixa-azul">
         <div class="container">
             <div class="row text-center">
@@ -25,7 +31,7 @@
                             <h5 id="telefone"><a class="fone" href="tel:+5583996122036" >(+55 83) 9 9612-2036</a></h5>
                         </div>
                         <div id="solic-orcamento-ico" class="col-lg-2" style="">
-                            <a href="tel:+5583996122036" class="btn btn-default btn-circle btn-lg"><i class="fa fa-whatsapp fa-2x"></i></a>
+                            <a href="tel:+5583996122036" class="btn btn-default btn-circle btn-lg"><i style="padding-top: 2px" class="fa fa-whatsapp fa-2x"></i></a>
                         </div>
                     </div>
 
@@ -36,8 +42,8 @@
                         </div>
 
                         <div class="col-md-5" style="">
-                            <a href="#" class="btn btn-default btn-circle btn-lg pull-left"><i class="fa fa-facebook-f fa-2x"></i></a>
-                            <a style="" href="#" class="insta btn-default btn-circle btn-lg pull-left"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a href="#" class="btn btn-default btn-circle btn-lg pull-left"><i style="padding-top: 4px" class="fa fa-facebook-f fa-2x"></i></a>
+                            <a style="" href="#" class="insta btn-default btn-circle btn-lg pull-left"><i style="padding-top: 3px" class="fa fa-instagram fa-2x"></i></a>
                         </div>
                     </div>
 

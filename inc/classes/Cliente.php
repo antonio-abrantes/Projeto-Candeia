@@ -9,8 +9,9 @@ class Cliente {
     public $dados = [
         'nome',
         'email',
-        'nascimento',
+        'cad_data',
         'telefone',
+        'mensagem',
         'cep',
         'cidade',
         'bairro',
@@ -25,12 +26,11 @@ class Cliente {
     }
 
     public function gravarCliente(){
-        $this->dados['nome'] = utf8_encode($this->dados['nome']);
         $this->DT = new DateTime( 'now', new DateTimeZone( 'America/Sao_Paulo') );
         $created_at = $this->DT->format('Y-m-d H:i:s');
         $updated_at = $this->DT->format('Y-m-d H:i:s');
 
-        $query = "INSERT INTO clientes (nome,email,telefone,created_at,updated_at) VALUES ('".$this->dados['nome']."','".$this->dados['email']."','".$this->dados['telefone']."','".$created_at."','".$updated_at."');";
+        $query = "INSERT INTO clientes (nome,email,telefone,cad_data, created_at,updated_at) VALUES ('".$this->dados['nome']."','".$this->dados['email']."','".$this->dados['telefone']."', '".$this->dados['cad_data']."' ,'".$created_at."','".$updated_at."');";
         $this->sql->query($query);
     }
 

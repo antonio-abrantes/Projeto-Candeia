@@ -6,9 +6,9 @@ class Funcoes_auxiliares
     public static function formataTelefone($telefone){
         $novo = "";
 
-        if(strlen($telefone) >= 10){
+        if(strlen($telefone) >= 11){
             $novo = substr_replace($telefone, '(', 0, 0);
-            $novo = substr_replace($novo, '9', 3, 0);
+            //$novo = substr_replace($novo, '9', 3, 0);
             $novo = substr_replace($novo, ') ', 3, 0);
         }else{
             $novo = substr_replace($telefone, '(', 0, 0);
@@ -16,6 +16,15 @@ class Funcoes_auxiliares
         }
 
         return $novo;
+    }
+
+    public static function limpaEspacosBranco($variavel){
+        return implode("", explode(" ", $variavel));
+    }
+
+    public static function getTelefoneFormatado($telefone)
+    {
+        return preg_replace('~.*(\d{2})(\d{4})(\d{4}).*~', '($1) $2-$3', $telefone);
     }
 
     public static function formataCep($cep){
@@ -29,17 +38,6 @@ class Funcoes_auxiliares
     public static function formataValor($valor){
         $valor = number_format((float)$valor, 2, '.', '.');
         return $valor;
-    }
-
-    public static function buscaTamanhoProduto($tamanho){
-        $sql = new Sql();
-
-        $result = $sql->select("SELECT * FROM tamanho_produtos WHERE id=".$tamanho);
-
-        $tamanho = $result[0];
-
-        return utf8_encode($tamanho['tamanho']);
-
     }
 
     public static function condificaStringsUTF8($dados){
@@ -73,29 +71,5 @@ class Funcoes_auxiliares
     {
         return preg_replace('~.*(\d{2})\/(\d{2})\/(\d{4}).*~', '$3-$2-$1', $data);
     }
-
-    public static function getSituacaoPedido($situacao)
-    {
-        $situacao_string = null;
-        switch ($situacao) {
-            case 1:
-                $situacao_string = "Pendente";
-                break;
-            case 2:
-                $situacao_string = "Em trânsito";
-                break;
-            case 3:
-                $situacao_string = "Cancelado";
-                break;
-            case 4:
-                $situacao_string = "Entregue";
-                break;
-            default:
-                # code...
-                break;
-        }
-        return $situacao_string;
-    }
-
 
 }

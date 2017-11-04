@@ -8,20 +8,14 @@ class Sql {
         return $this->conn = mysqli_connect("us-cdbr-iron-east-05.cleardb.net", "b308ad5ef68f66", "935e7291", "heroku_113247004c13731");
     }
 
-    public function gravar($query){
-        mysqli_query($this->conn, $query);
-    }
-
     public function query($string_query){
 
         return mysqli_query($this->conn, $string_query);
-
     }
 
     public function __destruct(){
 
         mysqli_close($this->conn);
-
     }
 
     public function select($query){
@@ -41,7 +35,6 @@ class Sql {
         unset($result);
         return $data;
     }
-
 }
 
 ?>

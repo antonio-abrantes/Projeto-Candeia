@@ -1,5 +1,5 @@
 
-<!-- Modal de contato -->
+<!-- Modal de contato - chamado dentro do footer.php -->
 <div class="modal fade" id="modal-contato" role="dialog">
     <div class="modal-dialog">
 
@@ -31,7 +31,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputData" class="col-sm-1 control-label">Data</label>
-                            <input type="date" min="2017-08-01" value="<?php echo date("Y-m-d"); ?>" class="form-control" id="inputData" name="inputData" required>
+                            <input type="date" min="2017-08-01" readonly value="<?php echo date("Y-m-d"); ?>" class="form-control" id="inputData" name="inputData" required>
                         </div>
                     </div>
                     <div class="row">
@@ -40,8 +40,8 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button id="enviar" type="submit" class="btn btn-success" >Enviar</button>
-                        <button id="cancelar" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button style="width: 100px" id="enviar" type="submit" class="btn btn-success" >Enviar</button>
+                        <button style="width: 100px" id="cancelar" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </form>
             </div>

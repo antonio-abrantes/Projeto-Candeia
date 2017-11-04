@@ -227,11 +227,6 @@
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
 
-<!-- Modal de contato -->
-    <?php
-    require_once 'view/modal-contato.php';
-    //require_once 'inc/email/envia_mail.php';
-    ?>
 
 <!-- Inicio do rodapé da pagina  -->
       <?php
