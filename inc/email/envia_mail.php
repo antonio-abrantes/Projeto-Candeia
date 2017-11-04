@@ -59,7 +59,7 @@ $enviador = substr($cliente->dados['nome'], 0, strpos($cliente->dados['nome'], "
 
      echo "enviado com sucesso...";
      $cliente->gravarCliente();
-     echo "<meta http-equiv='Refresh' content='2;URL=../../index.php'>"; // Redireciona para uma página de obrigado.
+     echo "<meta http-equiv='Refresh' content='0;URL=../../index.php'>"; // Redireciona para uma página de obrigado.
 // }
 //if (!empty($error)) echo $error;
 ?>
