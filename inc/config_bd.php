@@ -5,8 +5,7 @@ class Sql {
     public $conn;
 
     public function __construct(){
-
-        return $this->conn = mysqli_connect("HOST", "USUARIO", "SENHA", "NOME DO BANCO");
+        return $this->conn = mysqli_connect("us-cdbr-iron-east-05.cleardb.net", "b308ad5ef68f66", "935e7291", "heroku_113247004c13731");
     }
 
     public function gravar($query){
