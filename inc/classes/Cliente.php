@@ -25,8 +25,10 @@ class Cliente {
     }
 
     public function gravarCliente(){
+        var_dump($this->sql);
+        echo '<br><br>';
         $DT = new DateTime( 'now', new DateTimeZone( 'America/Sao_Paulo') );
-        $query = "INSERT INTO clientes (nome,email,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia) VALUES ('".$this->dados['nome']."',null,'".$this->dados['email']."','".$this->dados['telefone']."',null,null,null,null,null,null,null,'".$DT->format('Y-m-d H:i:s')."','".$DT->format('Y-m-d H:i:s')."');";
+        $query = "INSERT INTO clientes (nome,email,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia, created_at,updated_at) VALUES ('".$this->dados['nome']."',null,'".$this->dados['email']."','".$this->dados['telefone']."',null,null,null,null,null,null,null,'".$DT->format('Y-m-d H:i:s')."','".$DT->format('Y-m-d H:i:s')."');";
         $this->sql->query($query);
     }
 
