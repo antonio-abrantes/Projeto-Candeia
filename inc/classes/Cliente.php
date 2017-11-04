@@ -25,13 +25,9 @@ class Cliente {
     }
 
     public function gravarCliente(){
-
-        var_dump($this->sql);
-
-        echo "Gravado SIM";
-//        $DT = new DateTime( 'now', new DateTimeZone( 'America/Sao_Paulo') );
-//        $query = "INSERT INTO clientes (nome,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia,created_at,updated_at) VALUES ('".utf8_encode($this->dados['nome'])."','".$this->dados['nascimento']."','".$this->dados['telefone']."','".$this->dados['cep']."','".$this->dados['cidade']."','".$this->dados['logradouro']."',null,null,null,null,'".$DT->format('Y-m-d H:i:s')."','".$DT->format('Y-m-d H:i:s')."');";
-//        $this->sql->query($query);
+        $DT = new DateTime( 'now', new DateTimeZone( 'America/Sao_Paulo') );
+        $query = "INSERT INTO clientes (nome,nascimento,telefone,cep,cidade,bairro,logradouro,numero_residencial,complemento_endereco,ponto_referencia,created_at,updated_at) VALUES ('".utf8_encode($this->dados['nome'])."','".$this->dados['nascimento']."','".$this->dados['telefone']."','".$this->dados['cep']."','".$this->dados['cidade']."','".$this->dados['logradouro']."',null,null,null,null,'".$DT->format('Y-m-d H:i:s')."','".$DT->format('Y-m-d H:i:s')."');";
+        $this->sql->query($query);
     }
 
     public function updateCliente(){
