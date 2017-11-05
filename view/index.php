@@ -227,6 +227,9 @@
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
 
+<div id="div-confirmacao">
+
+</div>
 
 <!-- Inicio do rodapé da pagina  -->
       <?php

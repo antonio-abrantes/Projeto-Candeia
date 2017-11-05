@@ -67,7 +67,7 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#section-rodape").append(retorno);
+                    $("#div-confirmacao").append(retorno);
                     $('#modal-confirm').modal('show');
 
                 }
@@ -83,7 +83,7 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#section-rodape").append(retorno);
+                    $("#div-confirmacao").append(retorno);
                     $('#modal-error').modal('show');
 
                 }
