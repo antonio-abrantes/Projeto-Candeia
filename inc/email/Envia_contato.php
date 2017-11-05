@@ -4,7 +4,7 @@ require_once("../email/phpmailer/class.phpmailer.php");
 
 class Envia_contato{
 
-    private static $GUSER = ''; //<-- Insira aqui o seu GMail
+    private static $GUSER = 'Teste'; //<-- Insira aqui o seu GMail
     private static $GPWD = '';  // <-- Insira aqui a senha do seu GMail
 
     public static function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
