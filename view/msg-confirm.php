@@ -9,7 +9,7 @@
                 Seus dados foram enviados com sucesso...<br> Breve entraremos em contato!
             </div>
             <div class="modal-footer">
-                <button style="width: 100px" type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                <button style="width: 100px" type="button" id="ok" class="btn btn-default" data-dismiss="modal">OK</button>
             </div>
         </div>
     </div>

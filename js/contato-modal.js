@@ -85,11 +85,14 @@ $(function () {
 
                     $("#div-confirmacao").append(retorno);
                     $('#modal-error').modal('show');
-
                 }
             }
         );
     }
+
+    $("#ok").on('click', function () {
+        $("#div-confirmacao").html("");
+    });
 
     
     console.log("Iniciado javascript do modal..."); //Script do contato modal...
