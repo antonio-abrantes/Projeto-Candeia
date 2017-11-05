@@ -17,7 +17,7 @@
 
                 <div class="col-md-4" id="entre-contato">
                     <p>
-                        <input type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-contato" value="ENTRE EM CONTATO" >
+                        <input type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-contato" id="btn-contato" value="ENTRE EM CONTATO" >
                     </p>
                     <h4>Solicite uma Visita</h4>
                     <h5>Tire suas dúvidas</h5>

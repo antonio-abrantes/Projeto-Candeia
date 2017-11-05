@@ -72,7 +72,7 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#section-rodape").append(retorno);
+                    $("#div-confirmacao").append(retorno);
                     $('#modal-confirm').modal('show');
 
                 }
@@ -88,18 +88,17 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#section-rodape").append(retorno);
+                    $("#div-confirmacao").append(retorno);
                     $('#modal-error').modal('show');
+
                 }
             }
         );
     }
 
-    $("#ok").on('click', function () {
-        //$("#div-confirmacao").html("");
-        $("#div-confirmacao").remove(this);
+    $("#btn-contato").on("click", function () {
+        $("#div-confirmacao").html("");
     });
 
-    
     console.log("Iniciado javascript do modal..."); //Script do contato modal...
 });
