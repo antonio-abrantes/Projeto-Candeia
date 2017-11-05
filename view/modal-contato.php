@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button style="width: 100px" id="enviar" type="submit" class="btn btn-success" >Enviar</button>
+                        <button style="width: 100px" id="enviar" type="button" class="btn btn-success" data-dismiss="modal" >Enviar</button>
                         <button style="width: 100px" id="cancelar" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </form>

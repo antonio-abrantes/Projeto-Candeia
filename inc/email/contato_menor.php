@@ -2,18 +2,21 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-require 'inc/classes/Funcoes_auxiliares.php';
-require 'inc/classes/Cliente.php';
+require '../../inc/classes/Funcoes_auxiliares.php';
+require '../../inc/classes/Cliente.php';
 require 'Envia_contato.php';
 
     $cliente = new Cliente();
-    //var_dump($cliente);
 
-$cliente->dados['nome']         = $_POST["inputNome"];
-$cliente->dados['email']        = $_POST["inputEmail"];
-$cliente->dados['mensagem']     = $_POST["mensagem"];
-$cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($_POST["inputTel"]);
-$cliente->dados['cad_data']     = $_POST["inputData"];
+    $data = $_POST['contato'];
+
+$cliente->dados['nome']         = $data["inputNome"];
+$cliente->dados['email']        = $data["inputEmail"];
+$cliente->dados['mensagem']     = $data["mensagem"];
+$cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($data["inputTel"]);
+$cliente->dados['cad_data']     = $data["inputData"];
+
+//echo json_encode($cliente);
 
 $enviador = substr($cliente->dados['nome'], 0, strpos($cliente->dados['nome'], " "));
 
@@ -28,11 +31,21 @@ $Vai            = "Data: ".implode("/", array_reverse(explode("-", $cliente->dad
 // Insira abaixo o email que irá receber a mensagem, o email que irá enviar (o mesmo da variável GUSER),
 //o nome do email que envia a mensagem, o Assunto da mensagem e por último a variável com o corpo do email.
 
-// if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
-     echo "Enviado com sucesso...";
+$response = [
+    'response'
+];
+
+ if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
+     //echo "<br>Enviado com sucesso...";
      $cliente->gravarCliente();
-     echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
-// }
-// if (!empty($error)) echo $error;
+     //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
+     $response['response'] = true;
+ }else{
+     $response['response'] = false;
+ }
+ //if (!empty($error)) echo $error;
+
+echo json_encode($response);
+
 
 ?>

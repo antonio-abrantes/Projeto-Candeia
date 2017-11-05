@@ -17,7 +17,7 @@
 
                 <div class="col-md-4" id="entre-contato">
                     <p>
-                        <a href="orcamento.html" class="btn btn-warning" data-toggle="modal" data-target="#modal-contato">ENTRE EM CONTATO</a>
+                        <input type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-contato" value="ENTRE EM CONTATO" >
                     </p>
                     <h4>Solicite uma Visita</h4>
                     <h5>Tire suas dúvidas</h5>
@@ -68,3 +68,4 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/main.js"></script>
+<script src="js/contato-modal.js"></script>

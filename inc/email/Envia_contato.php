@@ -1,6 +1,6 @@
 <?php
 
-require_once("inc/email/phpmailer/class.phpmailer.php");
+require_once("../email/phpmailer/class.phpmailer.php");
 
 class Envia_contato{
 
@@ -8,6 +8,7 @@ class Envia_contato{
     private static $GPWD = '';  // <-- Insira aqui a senha do seu GMail
 
     public static function smtpmailer($para, $de, $de_nome, $assunto, $corpo) {
+
     global $error;
     $mail = new PHPMailer();
     $mail->IsSMTP();		        // Ativar SMTP
@@ -26,7 +27,7 @@ class Envia_contato{
         $error = 'Mail error: '.$mail->ErrorInfo;
         return false;
     } else {
-        $error = 'Mensagem enviada!';
+        $error = 'true';
         return true;
     }
 }

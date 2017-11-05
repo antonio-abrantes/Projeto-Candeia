@@ -1,5 +1,4 @@
 /.idea
-
-/.idea
 /vendor/
 /sql
+/inc/email/Envia_contato.php
