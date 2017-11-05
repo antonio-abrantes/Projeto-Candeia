@@ -49,6 +49,15 @@ $app->POST(
 );
 
 $app->POST(
+    '/envio-contato',
+    function () {
+
+        require 'inc/email/contato_menor.php';
+
+    }
+);
+
+$app->POST(
     '/contato-maior-:confirmado',
     function ($confirmado) {
 

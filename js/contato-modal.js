@@ -28,7 +28,7 @@ $(function () {
     function enviarContato(contato) {
         $.ajax(
             {
-                url: 'inc/email/contato_menor.php',
+                url: 'envio-contato',
                 type: "POST",
                 data: {contato :contato},
                 success: function (retorno) {
