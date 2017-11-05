@@ -42,7 +42,7 @@
                                 Conheça alguns de nossos trabalhos!!!
                             </h3-->
                             <p>
-                                <a class="btn btn-danger" href="portfolio.html">PORTIFÓLIO</a>
+                                <a class="btn btn-danger" href="portfolio">PORTFÓLIO</a>
                             </p>
                         </div>
                     </div>
