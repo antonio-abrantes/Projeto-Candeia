@@ -1,5 +1,5 @@
-<div id="div-confirmacao" style="z-index: 999999">
-    <div class="modal fade" id="modal-confirm" role="dialog">
+<div id="div-confirmacao">
+    <div class="modal fade" id="modal-confirm" role="dialog" style="z-index: 999999">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modal-error" role="dialog">
+    <div class="modal fade" id="modal-error" role="dialog" style="z-index: 999998">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
