@@ -2,8 +2,9 @@
 
 <section id="section-rodape">
 
+    <!-- Modais de confirmação -->
     <?php
-        require_once 'view/msg-confirm.php';
+        require_once 'view/modal-confirm.php';
     ?>
 
     <!-- Modal de contato -->
