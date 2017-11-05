@@ -14,11 +14,11 @@
             </div>
             <div id="navbarMin" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="activete" href="index.php">HOME</a></li>
+                    <li><a class="activete" href="./">HOME</a></li>
                     <li><a class="_estudio" href="#o-estudio">O ESTÚDIO</a></li>
-                    <li><a href="servicos.php">SERVIÇOS</a></li>
-                    <li><a href="portifolio.php">PORTFÓLIO</a></li>
-                    <li><a href="orcamento.php">ORÇAMENTO</a></li>
+                    <li><a href="servicos">SERVIÇOS</a></li>
+                    <li><a href="portifolio">PORTFÓLIO</a></li>
+                    <li><a href="orcamento">ORÇAMENTO</a></li>
                 </ul>
             </div>
             <!-- fim do collapse -->
@@ -43,11 +43,11 @@
             <div class="container">
 
                 <ul class="nav navbar-nav ul-nav-grande navbar-right">
-                    <li><a id="_home" href="index.php" class="nav-inicio" >HOME</a></li>
+                    <li><a id="_home" href="./" class="nav-inicio" >HOME</a></li>
                     <li><a id= "_estudio" href="#o-estudio" class="nav-meio">O ESTÚDIO</a></li>
-                    <li><a id="_servico" href="servicos.php" class="nav-meio" >SERVIÇOS</a></li>
-                    <li><a id="_portifolio" href="portifolio.php" class="nav-meio" >PORTFÓLIO</a></li>
-                    <li><a id="_contato" href="orcamento.php" class="nav-final" >ORÇAMENTO</a></li>
+                    <li><a id="_servico" href="servicos" class="nav-meio" >SERVIÇOS</a></li>
+                    <li><a id="_portifolio" href="portifolio" class="nav-meio" >PORTFÓLIO</a></li>
+                    <li><a id="_contato" href="orcamento" class="nav-final" >ORÇAMENTO</a></li>
                 </ul>
             </div>
 

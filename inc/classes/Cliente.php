@@ -1,6 +1,6 @@
 <?php
 
-require '../config_bd.php';
+require 'inc/config_bd.php';
 
 class Cliente {
 

@@ -2,8 +2,8 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-require '../classes/Funcoes_auxiliares.php';
-require '../classes/Cliente.php';
+require 'inc/classes/Funcoes_auxiliares.php';
+require 'inc/classes/Cliente.php';
 require 'Envia_contato.php';
 
     $cliente = new Cliente();
@@ -28,11 +28,11 @@ $Vai            = "Data: ".implode("/", array_reverse(explode("-", $cliente->dad
 // Insira abaixo o email que irá receber a mensagem, o email que irá enviar (o mesmo da variável GUSER),
 //o nome do email que envia a mensagem, o Assunto da mensagem e por último a variável com o corpo do email.
 
- if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
+// if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
      echo "Enviado com sucesso...";
      $cliente->gravarCliente();
-     echo "<meta http-equiv='Refresh' content='0;URL=../../index.php'>"; // Redireciona para uma página.
- }
- if (!empty($error)) echo $error;
+     echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
+// }
+// if (!empty($error)) echo $error;
 
 ?>
