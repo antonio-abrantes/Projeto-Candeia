@@ -1,4 +1,4 @@
-<div id="div-confirmacao">
+<div id="div-confirmacao" style="z-index: 999999">
     <div class="modal fade" id="modal-confirm" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
