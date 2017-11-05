@@ -223,6 +223,10 @@
 
     </div>
 
+    <div id="div-confirmacao">
+
+    </div>
+
 </section>
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
@@ -242,10 +246,6 @@
         });
     });
 </script>
-
-<div id="div-confirmacao">
-
-</div>
 
 </body>
 </html>
