@@ -3,9 +3,14 @@
 class Sql {
 
     public $conn;
+    //Credenciais do banco de dados
+    private $host = "us-cdbr-iron-east-05.cleardb.net";
+    private $user = "b308ad5ef68f66";
+    private $password = "935e7291";
+    private $banco_dados = "heroku_113247004c13731";
 
     public function __construct(){
-        return $this->conn = mysqli_connect("us-cdbr-iron-east-05.cleardb.net", "b308ad5ef68f66", "935e7291", "heroku_113247004c13731");
+        return $this->conn = mysqli_connect($this->host, $this->user, $this->password, $this->banco_dados);
     }
 
     public function query($string_query){
