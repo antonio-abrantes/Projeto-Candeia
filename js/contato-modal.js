@@ -72,7 +72,7 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#div-confirmacao").append(retorno);
+                    $("#section-rodape").append(retorno);
                     $('#modal-confirm').modal('show');
 
                 }
@@ -88,7 +88,7 @@ $(function () {
                 success: function (retorno) {
                     //console.log(retorno);
 
-                    $("#div-confirmacao").append(retorno);
+                    $("#section-rodape").append(retorno);
                     $('#modal-error').modal('show');
                 }
             }
@@ -96,7 +96,8 @@ $(function () {
     }
 
     $("#ok").on('click', function () {
-        $("#div-confirmacao").html("");
+        //$("#div-confirmacao").html("");
+        $("#div-confirmacao").remove(this);
     });
 
     
