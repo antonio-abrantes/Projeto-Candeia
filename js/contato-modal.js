@@ -65,40 +65,40 @@ $(function () {
     }
 
     function modalConfirmSuccess() {
-        $.ajax(
-            {
-                url: 'view/msg-confirm.php',
-                type: "GET",
-                success: function (retorno) {
-                    //console.log(retorno);
 
-                    $("#div-confirmacao").append(retorno);
-                    $('#modal-confirm').modal('show');
-
-                }
-            }
-        );
+        $('#modal-confirm').modal('show');
+        // $.ajax(
+        //     {
+        //         url: 'view/msg-confirm.php',
+        //         type: "GET",
+        //         success: function (retorno) {
+        //             //console.log(retorno);
+        //
+        //             $("#div-confirmacao").append(retorno);
+        //             $('#modal-confirm').modal('show');
+        //
+        //         }
+        //     }
+        // );
     }
 
     function modalConfirmError() {
-        $.ajax(
-            {
-                url: 'view/msg-error.php',
-                type: "GET",
-                success: function (retorno) {
-                    //console.log(retorno);
 
-                    $("#div-confirmacao").append(retorno);
-                    $('#modal-error').modal('show');
-
-                }
-            }
-        );
+        $('#modal-error').modal('show');
+        // $.ajax(
+        //     {
+        //         url: 'view/msg-error.php',
+        //         type: "GET",
+        //         success: function (retorno) {
+        //             //console.log(retorno);
+        //
+        //             $("#div-confirmacao").append(retorno);
+        //             $('#modal-error').modal('show');
+        //
+        //         }
+        //     }
+        // );
     }
-
-    $("#btn-contato").on("click", function () {
-        $("#div-confirmacao").html("");
-    });
 
     console.log("Iniciado javascript do modal..."); //Script do contato modal...
 });
