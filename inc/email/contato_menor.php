@@ -27,6 +27,7 @@ $Vai            = "Data: ".implode("/", array_reverse(explode("-", $cliente->dad
                 "\n\nNome: ".$cliente->dados['nome']."\n\nTelefone: ".Funcoes_auxiliares::formataTelefone($cliente->dados['telefone']).
                 "\n\nE-mail: ".$cliente->dados['email']."\n\nMensagem: ".$cliente->dados['mensagem']."\n";
 
+$cliente->gravarCliente();
 
 // Insira abaixo o email que irá receber a mensagem, o email que irá enviar (o mesmo da variável GUSER),
 //o nome do email que envia a mensagem, o Assunto da mensagem e por último a variável com o corpo do email.
@@ -37,7 +38,7 @@ $response = [
 
  if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
      //echo "<br>Enviado com sucesso...";
-     $cliente->gravarCliente();
+     //$cliente->gravarCliente();
      //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
      $response['response'] = true;
  }else{
