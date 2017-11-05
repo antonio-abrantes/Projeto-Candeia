@@ -1,6 +1,6 @@
 
 <!-- Modal de contato - chamado dentro do footer.php -->
-<div class="modal fade" id="modal-contato" role="dialog">
+<div class="modal fade" id="modal-contato" role="dialog" style="z-index: 999999">
     <div class="modal-dialog">
 
         <!-- Modal content-->

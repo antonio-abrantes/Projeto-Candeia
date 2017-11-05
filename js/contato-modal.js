@@ -67,37 +67,13 @@ $(function () {
     function modalConfirmSuccess() {
 
         $('#modal-confirm').modal('show');
-        // $.ajax(
-        //     {
-        //         url: 'view/msg-confirm.php',
-        //         type: "GET",
-        //         success: function (retorno) {
-        //             //console.log(retorno);
-        //
-        //             $("#div-confirmacao").append(retorno);
-        //             $('#modal-confirm').modal('show');
-        //
-        //         }
-        //     }
-        // );
+
     }
 
     function modalConfirmError() {
 
         $('#modal-error').modal('show');
-        // $.ajax(
-        //     {
-        //         url: 'view/msg-error.php',
-        //         type: "GET",
-        //         success: function (retorno) {
-        //             //console.log(retorno);
-        //
-        //             $("#div-confirmacao").append(retorno);
-        //             $('#modal-error').modal('show');
-        //
-        //         }
-        //     }
-        // );
+
     }
 
     console.log("Iniciado javascript do modal..."); //Script do contato modal...
