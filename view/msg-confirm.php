@@ -1,4 +1,4 @@
-<div class="modal fade" id="modal-confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-confirm" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,7 +15,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-error" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
