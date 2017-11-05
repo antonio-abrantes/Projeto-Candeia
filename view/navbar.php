@@ -17,7 +17,7 @@
                     <li><a class="activete" href="./">HOME</a></li>
                     <li><a class="_estudio" href="#o-estudio">O ESTÚDIO</a></li>
                     <li><a href="servicos">SERVIÇOS</a></li>
-                    <li><a href="portifolio">PORTFÓLIO</a></li>
+                    <li><a href="portfolio">PORTFÓLIO</a></li>
                     <li><a href="orcamento">ORÇAMENTO</a></li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
                     <li><a id="_home" href="./" class="nav-inicio" >HOME</a></li>
                     <li><a id= "_estudio" href="#o-estudio" class="nav-meio">O ESTÚDIO</a></li>
                     <li><a id="_servico" href="servicos" class="nav-meio" >SERVIÇOS</a></li>
-                    <li><a id="_portifolio" href="portifolio" class="nav-meio" >PORTFÓLIO</a></li>
+                    <li><a id="_portifolio" href="portfolio" class="nav-meio" >PORTFÓLIO</a></li>
                     <li><a id="_contato" href="orcamento" class="nav-final" >ORÇAMENTO</a></li>
                 </ul>
             </div>

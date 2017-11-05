@@ -23,7 +23,7 @@ $app->get(
 
 // Rota da pagina dos portfolios
 $app->get(
-    '/portifolio',
+    '/portfolio',
     function () {
         require_once("view/portifolio.php");
     }
