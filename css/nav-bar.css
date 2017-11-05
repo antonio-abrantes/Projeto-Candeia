@@ -78,7 +78,7 @@
     position: absolute;
     top: 80px;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     background: none;
     border: none;
     border-radius: 0px;
@@ -194,5 +194,5 @@
 }
 
 .navbar-nav>li>.dropdown-menu {
-    z-index: 998;
+    z-index: 9999;
 }
