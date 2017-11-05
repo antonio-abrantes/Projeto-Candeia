@@ -42,6 +42,11 @@ $(function () {
 
                        if(data['response'] === true){
                            modalConfirmSuccess(); //Caso ocorra tudo correto na rquisição...
+                           $("#inputNome").val("");
+                           $("#inputEmail").val("");
+                           $("#mensagem").val("");
+                           $("#inputTel").val("");
+                           $("#inputData").val("");
                        }else{
                            modalConfirmError();  //Caso ocorra algo errado no retorno requisição...
                        }
