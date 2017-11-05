@@ -2,6 +2,10 @@
 
 <section id="section-rodape">
 
+    <?php
+        require_once 'view/msg-confirm.php';
+    ?>
+
     <!-- Modal de contato -->
     <?php
         require_once 'view/modal-contato.php';

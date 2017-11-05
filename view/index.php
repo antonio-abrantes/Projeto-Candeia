@@ -223,14 +223,6 @@
 
     </div>
 
-    <div id="div-confirmacao">
-
-        <?php
-            require_once 'view/msg-confirm.php';
-        ?>
-
-    </div>
-
 </section>
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
