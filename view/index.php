@@ -148,76 +148,72 @@
 </section> <!-- / Fim da Missão de Valores -->
 
 
-<section id="">
-    <div class="container">
+<section>
+    <div class="container o-estudio">
 
-        <div class="o-estudio">
-
-            <div class="row">
-
-                <div class="col-md-2"></div>
-
-                <div class="col-md-8">
-                    <img alt="imagem teste" src="imagens/imagem02principal.JPG" class="img-rounded img-responsive img-margens" />
-                </div>
-            </div>
-
-            <div class="col-md-2"></div>
-
-            <div class="row visible-xs-block visible-sm-block">
-                <div class="divisor-p"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 divisor-g visible-md-block visible-lg-block"></div>
-            </div>
+        <div class="row">
 
             <div class="col-md-2"></div>
 
             <div class="col-md-8">
-                <h1 class="h1-titulos-1x">
-                    EXPERIÊNCIA
-                </h1>
-                <p class="p-descricoes">
-                    Nossos profissionais trazem uma carga de experiência, adiquirida trabalhando em fábricas de móveis, estúdios de marketing e design e em escritórios de
-                    engenharia e arquitetura. Ministramos palestras e cursos em eventos de design regionais e nacionais e apresentamos projetos em congressos internacionais.
-                    Como estúdio de design, começamos nossa jornada há mais de um ano, e durante esse tempo, desenvolvemos várias marcas, ambientes e alguns produtos
-                    que vocês podem ver no nosso portifólio.
-                </p>
+                <img alt="imagem teste" src="imagens/imagem02principal.JPG" class="img-rounded img-responsive img-margens" />
             </div>
-
-            <div class="col-md-2"></div>
-
-            <div class="row visible-xs-block visible-sm-block">
-                <div class="divisor-p"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 divisor-g visible-md-block visible-lg-block"></div>
-            </div>
-
-            <div class="col-md-2"></div>
-
-            <div class="col-md-8">
-                <h1 class="h1-titulos-1x">
-                    POR QUE INVESTIR EM DESIGN?
-                </h1>
-                <p class="p-descricoes">
-                    Empresas que utilizam o design de uma maneira eficaz tendem a ser mais competitivas e lucrativas. Isso porque o objetivo do design é desenvolver produtos
-                    inovadores com foco na necessidade dos usuários finais, determinando melhor desempenho, apelo emocional, facilidade de uso e menores custos de
-                    fabricação.<br>
-                    A experiência acumulada ao longo dos anos, e a imersão no universo dos usuários, ajudam os profissionais do design (designers) a aplicar estratégias que
-                    ajudam a desenvolver produtos novos e melhores de uma forma sistematizada.<br>
-                    Podemos ajudar a sua empresa aumentando a margem de lucros e o número de vendas, introduzindo seus produtos e serviços aos mercados nacional e
-                    internacional, estabelecendo padrões de inovação contínua, aumentando o valor da sua marca e aumentando sua competitividade.
-                </p>
-                <p class="p-citacoes">
-                    “Estudos realizados pela CNI indicam que 75% das empresas que investiram recentemente em design
-                    registraram aumentos em suas vendas. Dessas, 41% também conseguiram reduzir seus custos.”
-                </p>
-            </div>
-
-            <div class="col-md-2"></div>
-
         </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="row visible-xs-block visible-sm-block">
+            <div class="divisor-p"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 divisor-g visible-md-block visible-lg-block"></div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+            <h1 class="h1-titulos-1x">
+                EXPERIÊNCIA
+            </h1>
+            <p class="p-descricoes">
+                Nossos profissionais trazem uma carga de experiência, adiquirida trabalhando em fábricas de móveis, estúdios de marketing e design e em escritórios de
+                engenharia e arquitetura. Ministramos palestras e cursos em eventos de design regionais e nacionais e apresentamos projetos em congressos internacionais.
+                Como estúdio de design, começamos nossa jornada há mais de um ano, e durante esse tempo, desenvolvemos várias marcas, ambientes e alguns produtos
+                que vocês podem ver no nosso portifólio.
+            </p>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="row visible-xs-block visible-sm-block">
+            <div class="divisor-p"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 divisor-g visible-md-block visible-lg-block"></div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+            <h1 class="h1-titulos-1x">
+                POR QUE INVESTIR EM DESIGN?
+            </h1>
+            <p class="p-descricoes">
+                Empresas que utilizam o design de uma maneira eficaz tendem a ser mais competitivas e lucrativas. Isso porque o objetivo do design é desenvolver produtos
+                inovadores com foco na necessidade dos usuários finais, determinando melhor desempenho, apelo emocional, facilidade de uso e menores custos de
+                fabricação.<br>
+                A experiência acumulada ao longo dos anos, e a imersão no universo dos usuários, ajudam os profissionais do design (designers) a aplicar estratégias que
+                ajudam a desenvolver produtos novos e melhores de uma forma sistematizada.<br>
+                Podemos ajudar a sua empresa aumentando a margem de lucros e o número de vendas, introduzindo seus produtos e serviços aos mercados nacional e
+                internacional, estabelecendo padrões de inovação contínua, aumentando o valor da sua marca e aumentando sua competitividade.
+            </p>
+            <p class="p-citacoes">
+                “Estudos realizados pela CNI indicam que 75% das empresas que investiram recentemente em design
+                registraram aumentos em suas vendas. Dessas, 41% também conseguiram reduzir seus custos.”
+            </p>
+        </div>
+
+        <div class="col-md-2"></div>
 
     </div>
 
