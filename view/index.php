@@ -145,14 +145,13 @@
     </div>
 
 
-</section> <!-- / Fim da Missão de Valores  - seção com defeito-->
+</section> <!-- / Fim da Missão de Valores -->
 
 
 <section id="">
     <div class="container">
 
-        <div class="row o-estudio">
-
+        <div class="o-estudio">
 
             <div class="row">
 
