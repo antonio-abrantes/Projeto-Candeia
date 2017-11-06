@@ -33,18 +33,19 @@ $cliente->gravarCliente();
 //o nome do email que envia a mensagem, o Assunto da mensagem e por último a variável com o corpo do email.
 
 $response = [
-    'response'
+    "0"=>"response",
+    "response"=> true
 ];
 
- if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
-     //echo "<br>Enviado com sucesso...";
-     //$cliente->gravarCliente();
-     //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
-     $response['response'] = true;
- }else{
-     $response['response'] = false;
- }
- //if (!empty($error)) echo $error;
+// if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Contato de Cliente', $Vai)) {
+//     //echo "<br>Enviado com sucesso...";
+//     //$cliente->gravarCliente();
+//     //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
+//     $response['response'] = true;
+// }else{
+//     $response['response'] = false;
+// }
+// //if (!empty($error)) echo $error;
 
 echo json_encode($response);
 

@@ -12,7 +12,6 @@
     ?>
 
 <!-- Slider da pagina  -->
-
 <div class="container my-carousel">
     <div class="row">
         <div id="carosel" class="col-md-12">
@@ -146,7 +145,7 @@
     </div>
 
 
-</section> <!-- / Fim da Missão de Valores  -->
+</section> <!-- / Fim da Missão de Valores  - seção com defeito-->
 
 
 <section id="">
@@ -222,7 +221,6 @@
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
 
-
 <!-- Inicio do rodapé da pagina  -->
       <?php
             require_once "view/footer.php";
@@ -238,10 +236,6 @@
         });
     });
 </script>
-
-<div id="div-confirmacao">
-
-</div>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 <!-- Modal de contato - chamado dentro do footer.php -->
-<div class="modal fade" id="modal-contato" role="dialog">
+<div class="modal fade" id="modal-contato" role="dialog" style="z-index: 999999">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -10,7 +10,7 @@
                 <h4 class="modal-title">Envie sua dúvida ou sugestão.</h4>
             </div>
             <div class="modal-body">
-                <form class="form" name='envia_mail' method="post" action="contato-menor-true">
+                <form class="form" id="form-contato" name='envia_mail' method="post" action="contato-menor-true">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button style="width: 100px" id="enviar" type="button" class="btn btn-success" data-dismiss="modal" >Enviar</button>
+                        <button style="width: 100px" id="enviar" type="submit" class="btn btn-success" data-dismiss="modal" >Enviar</button>
                         <button style="width: 100px" id="cancelar" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </form>
