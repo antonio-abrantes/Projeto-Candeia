@@ -12,7 +12,6 @@
     ?>
 
 <!-- Slider da pagina  -->
-
 <div class="container my-carousel">
     <div class="row">
         <div id="carosel" class="col-md-12">
