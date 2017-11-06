@@ -27,11 +27,12 @@ $(function () {
 
     /*
     * OBS: Internamente, alguns servidores, como o Heroku, não aceitam POST via Ajax com rotas no Slim Framework
+    * url: './inc/email/contato_menor.php',
     */
     function enviarContato(contato) {
         $.ajax(
             {
-                url: './inc/email/contato_menor.php',
+                url: 'https://candeia-studio.herokuapp.com/envio-contato',
                 type: "POST",
                 data: {contato :contato},
                 success: function (retorno) {
