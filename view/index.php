@@ -145,7 +145,7 @@
     </div>
 
 
-</section> <!-- / Fim da Missão de Valores  -->
+</section> <!-- / Fim da Missão de Valores  - seção com defeito-->
 
 
 <section id="">
