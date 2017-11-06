@@ -32,7 +32,7 @@ $(function () {
     function enviarContato(contato) {
         $.ajax(
             {
-                url: 'https://candeia-studio.herokuapp.com/envio-contato',
+                url: 'envio-contato',
                 type: "POST",
                 data: {contato :contato},
                 success: function (retorno) {
