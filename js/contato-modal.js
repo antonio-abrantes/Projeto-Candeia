@@ -59,6 +59,9 @@ $(function () {
                 },
                 error: function (ajaxContext) {
                     modalConfirmError();  //Caso ocorra algo errado na requisição...
+                },
+                complete: function(){
+                    $("body").css('padding-right', '-17px');
                 }
             }
         );
@@ -67,14 +70,13 @@ $(function () {
     function modalConfirmSuccess() {
 
         $('#modal-confirm').modal('show');
-        $("body").css('padding-right', 0);
+
 
     }
 
     function modalConfirmError() {
 
         $('#modal-error').modal('show');
-        $("body").css('padding-right', 0);
 
     }
 
