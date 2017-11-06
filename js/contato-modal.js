@@ -64,13 +64,20 @@ $(function () {
         );
     }
 
+    /*
+    *           Scrip para correção do padding-right adicionado pelo modal
+    * Há dois eventos que disparam no fechamento de um modal, primeiro é hide.bs.modal,
+    * e então é hidden.bs.modal. Não é uma correção gentil! Muito suave! Você nem sequer
+    * vê o preenchimento-direito sendo adicionado em tudo.
+    *
+    */
     $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
         $('body').css('padding-right','0');
     });
 
     function modalConfirmSuccess() {
 
-        $('#modal-confirm').modal({backdrop: 'static', show: true}).delay(3000).hide(0, function() {
+        $('#modal-confirm').modal({backdrop: 'static', show: true}).delay(5000).hide(0, function() {
             $(this).modal('hide');
         });
 
@@ -78,7 +85,7 @@ $(function () {
 
     function modalConfirmError() {
 
-        $('#modal-error').modal({backdrop: 'static', show: true}).delay(3000).hide(0, function() {
+        $('#modal-error').modal({backdrop: 'static', show: true}).delay(5000).hide(0, function() {
             $(this).modal('hide');
         });
 
