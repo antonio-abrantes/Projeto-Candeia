@@ -6,7 +6,6 @@
 
 body{
     background-color: #fff;
-    padding-right: 0;
 }
 
 .divisor-g{
@@ -405,6 +404,8 @@ body{
     text-decoration: none;
     color: #eeffef;
 }
+
+
 
     @media (max-width: 994px) {
 

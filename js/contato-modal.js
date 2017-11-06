@@ -3,7 +3,7 @@ $(function () {
     $("#enviar").on('click', function () {
         montarJsonContato();
     });
-
+    
     function montarJsonContato() {
 
         var inputNome = $("#inputNome").val();
@@ -65,31 +65,48 @@ $(function () {
     }
 
     /*
-    *           Scrip para correção do padding-right adicionado pelo modal
-    * Há dois eventos que disparam no fechamento de um modal, primeiro é hide.bs.modal,
-    * e então é hidden.bs.modal. Não é uma correção gentil! Muito suave! Você nem sequer
-    * vê o preenchimento-direito sendo adicionado em tudo.
-    *
-    */
+     *           Scrip para correção do padding-right adicionado pelo modal
+     * Há dois eventos que disparam no fechamento de um modal, primeiro é hide.bs.modal,
+     * e então é hidden.bs.modal. Não é uma correção gentil! Muito suave! Você nem sequer
+     * vê o preenchimento-direito sendo adicionado em tudo.
+     *
+     */
     $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
         $('body').css('padding-right','0');
     });
 
     function modalConfirmSuccess() {
+        $.ajax(
+            {
+                url: 'view/msg-confirm.php',
+                type: "GET",
+                success: function (retorno) {
+                    //console.log(retorno);
 
-        $('#modal-confirm').modal({backdrop: 'static', show: true}).delay(5000).hide(0, function() {
-            $(this).modal('hide');
-        });
+                    $("#div-confirmacao").append(retorno);
+                    $('#modal-confirm').modal('show');
 
+                }
+            }
+        );
     }
 
     function modalConfirmError() {
+        $.ajax(
+            {
+                url: 'view/msg-error.php',
+                type: "GET",
+                success: function (retorno) {
+                    //console.log(retorno);
 
-        $('#modal-error').modal({backdrop: 'static', show: true}).delay(5000).hide(0, function() {
-            $(this).modal('hide');
-        });
+                    $("#div-confirmacao").append(retorno);
+                    $('#modal-error').modal('show');
 
+                }
+            }
+        );
     }
 
+    
     console.log("Iniciado javascript do modal..."); //Script do contato modal...
 });

@@ -12,6 +12,7 @@
     ?>
 
 <!-- Slider da pagina  -->
+
 <div class="container my-carousel">
     <div class="row">
         <div id="carosel" class="col-md-12">
@@ -145,14 +146,11 @@
     </div>
 
 
-</section> <!-- / Fim da Missão de Valores  - seção com defeito-->
+</section> <!-- / Fim da Missão de Valores  -->
 
 
 <section id="">
-    <div class="container">
-
-        <div class="row o-estudio">
-
+    <div class="container o-estudio">
 
             <div class="row">
 
@@ -218,13 +216,12 @@
 
             <div class="col-md-2"></div>
 
-        </div>
-
     </div>
 
 </section>
 
 <!-- / FIM DAS SUB-SEÇÕES  -->
+
 
 <!-- Inicio do rodapé da pagina  -->
       <?php
@@ -241,6 +238,10 @@
         });
     });
 </script>
+
+<div id="div-confirmacao">
+
+</div>
 
 </body>
 </html>
