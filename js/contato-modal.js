@@ -64,6 +64,10 @@ $(function () {
         );
     }
 
+    $(document.body).on('hide.bs.modal,hidden.bs.modal', function () {
+        $('body').css('padding-right','0');
+    });
+
     function modalConfirmSuccess() {
 
         $('#modal-confirm').modal({backdrop: 'static', show: true}).delay(3000).hide(0, function() {
