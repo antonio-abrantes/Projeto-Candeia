@@ -66,16 +66,13 @@ $(function () {
 
     function modalConfirmSuccess() {
 
-        $('#modal-confirm').modal('show');
-        $("body").css('padding-right', '-=17');
-
+        $('#modal-confirm').modal({backdrop: 'static', show: true});
 
     }
 
     function modalConfirmError() {
 
-        $('#modal-error').modal('show');
-        $("body").css('padding-right', '-=17');
+        $('#modal-error').modal({backdrop: 'static', show: true});
 
     }
 

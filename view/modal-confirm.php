@@ -10,7 +10,7 @@
                     Seus dados foram enviados com sucesso...<br> Breve entraremos em contato!
                 </div>
                 <div class="modal-footer">
-                    <button style="width: 100px" type="button" id="confirm" class="btn btn-default" data-dismiss="modal">OK</button>
+                    <button style="width: 100px" type="button" id="confirm" class="btn btn-default" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     Não foi possivel enviar seus dados... Tente novamente!
                 </div>
                 <div class="modal-footer">
-                    <button style="width: 100px" type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    <button style="width: 100px" type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close">OK</button>
                 </div>
             </div>
         </div>
