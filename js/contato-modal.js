@@ -3,7 +3,7 @@ $(function () {
     $("#enviar").on('click', function () {
         montarJsonContato();
     });
-    
+
     function montarJsonContato() {
 
         var inputNome = $("#inputNome").val();
@@ -59,20 +59,24 @@ $(function () {
                 },
                 error: function (ajaxContext) {
                     modalConfirmError();  //Caso ocorra algo errado na requisição...
-                },
+                }
             }
         );
     }
 
     function modalConfirmSuccess() {
 
-        $('#modal-confirm').modal({backdrop: 'static', show: true});
+        $('#modal-confirm').modal({backdrop: 'static', show: true}).delay(3000).hide(0, function() {
+            $(this).modal('hide');
+        });
 
     }
 
     function modalConfirmError() {
 
-        $('#modal-error').modal({backdrop: 'static', show: true});
+        $('#modal-error').modal({backdrop: 'static', show: true}).delay(3000).hide(0, function() {
+            $(this).modal('hide');
+        });
 
     }
 
