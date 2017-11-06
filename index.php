@@ -40,7 +40,7 @@ $app->get(
 
 //Rota envio do formulario de contato pequeno
 $app->POST(
-    '/contato-menor-:confirmado',
+    '/contatomenor-:confirmado',
     function ($confirmado) {
 
         require 'inc/email/contato_menor.php';
