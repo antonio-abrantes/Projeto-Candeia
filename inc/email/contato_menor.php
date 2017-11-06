@@ -2,8 +2,8 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-require '../../inc/classes/Funcoes_auxiliares.php';
-require '../../inc/classes/Cliente.php';
+require 'inc/classes/Funcoes_auxiliares.php';
+require 'inc/classes/Cliente.php';
 require 'Envia_contato.php';
 
     $cliente = new Cliente();
