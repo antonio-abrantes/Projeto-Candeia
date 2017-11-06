@@ -81,7 +81,7 @@
 <!-- INICIO SEÇÃO MISSÃO DE VALORES  -->
 
 <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row visible-xs-block visible-sm-block">
             <div class="divisor-p"></div>
         </div>
@@ -150,7 +150,7 @@
 
 
 <section id="">
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row o-estudio">
 
