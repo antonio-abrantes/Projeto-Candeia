@@ -10,7 +10,7 @@
                 <h4 class="modal-title">Envie sua dúvida ou sugestão.</h4>
             </div>
             <div class="modal-body">
-                <form class="form" id="form-contato" name='envia_mail' method="POST" action="inc/email/contato_menor.php">
+                <form class="form" id="form-contato" name='envia_mail' method="POST" action="">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
