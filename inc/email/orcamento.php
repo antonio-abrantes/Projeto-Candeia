@@ -99,11 +99,11 @@ $camposPreenchidos .= "\n";
 
 $Vai = $cabeçalho.$projetos.$camposPreenchidos;
 
-$confirmacao = true;
+//$confirmacao = false;
 
-//if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Orçamento', $Vai)) {
+//if (Envia_orcamento::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, utf8_encode('Orcamento'), $Vai)) {
     $cliente->gravarCliente();
-//    $confirmacao = true;
+    $confirmacao = true;
 //    //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
 //}
 //if (!empty($error)) echo $error;
