@@ -44,28 +44,28 @@
 
                     <div class="col-md-5 form-horizontal">
                         <div class="form-group">
-                            <label for="inputNome" class="col-sm-2 control-label">Nome</label>
+                            <label for="inputNomeOrc" class="col-sm-2 control-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputNome" name="inputNome" placeholder="Nome" autofocus required>
+                                <input type="text" class="form-control" id="inputNomeOrc" name="inputNomeOrc" placeholder="Nome" autofocus required>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                            <label for="inputEmailOrc" class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
+                                <input type="email" class="form-control" id="inputEmailOrc" name="inputEmailOrc" placeholder="Email" required>
                             </div>
                         </div>
 
                         <div class="form-group form-horizontal">
-                            <label for="inputTel" class="col-sm-2 control-label">Tel.:</label>
+                            <label for="inputTelOrc" class="col-sm-2 control-label">Tel.:</label>
                             <div class="col-sm-4">
-                                <input type="tel" class="form-control" id="inputTel" name="inputTel" placeholder="(00) 00000-0000" required>
+                                <input type="tel" class="form-control" id="inputTelOrc" name="inputTelOrc" placeholder="(00) 00000-0000" required>
                             </div>
 
-                            <label for="inputData" class="col-sm-1 control-label">Data</label>
+                            <label for="inputDataOrc" class="col-sm-1 control-label">Data</label>
                             <div class="col-sm-5">
-                                <input type="date" readonly value="<?php echo date("Y-m-d"); ?>" class="form-control" id="inputData" name="inputData" required>
+                                <input type="date" readonly value="<?php echo date("Y-m-d"); ?>" class="form-control" id="inputDataOrc" name="inputDataOrc" required>
                             </div>
                         </div>
 

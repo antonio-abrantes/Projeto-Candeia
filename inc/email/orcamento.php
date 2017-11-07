@@ -9,10 +9,10 @@ require 'Envia_orcamento.php';
     $cliente = new ClienteOrcamento();
 
 
-$cliente->dados['nome']         = $_POST["inputNome"];
-$cliente->dados['email']        = $_POST["inputEmail"];
-$cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($_POST["inputTel"]);
-$cliente->dados['cad_data']     = $_POST["inputData"];
+$cliente->dados['nome']         = $_POST["inputNomeOrc"];
+$cliente->dados['email']        = $_POST["inputEmailOrc"];
+$cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($_POST["inputTelOrc"]);
+$cliente->dados['cad_data']     = $_POST["inputDataOrc"];
 
 
 $enviador = substr($cliente->dados['nome'], 0, strpos($cliente->dados['nome'], " "));
