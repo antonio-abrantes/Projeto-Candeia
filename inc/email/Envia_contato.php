@@ -1,6 +1,6 @@
 <?php
 
-require_once("../email/phpmailer/class.phpmailer.php");
+require_once("inc/email/phpmailer/class.phpmailer.php");
 
 class Envia_contato{
 
