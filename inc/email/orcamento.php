@@ -2,7 +2,7 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-//require 'inc/classes/Funcoes_auxiliares.php';
+require 'inc/classes/Funcoes_auxiliares.php';
 //require 'inc/classes/ClienteOrcamento.php';
 //require 'Envia_contato.php';
 
@@ -11,12 +11,13 @@ header('Content-Type: text/html; charset=utf-8');
     var_dump($_POST);
     echo '<br>';
 
-    /*
+
 $cliente->dados['nome']         = $_POST["inputNome"];
 $cliente->dados['email']        = $_POST["inputEmail"];
 $cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($_POST["inputTel"]);
 $cliente->dados['cad_data']     = $_POST["inputData"];
 
+/*
 $enviador = substr($cliente->dados['nome'], 0, strpos($cliente->dados['nome'], " "));
 
 $cabeçalho = "Data: ".implode("/", array_reverse(explode("-", $cliente->dados['cad_data']))).
