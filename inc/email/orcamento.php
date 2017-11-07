@@ -97,12 +97,12 @@ $camposPreenchidos .= "\n";
 
 $Vai = $cabeçalho.$projetos.$camposPreenchidos;
 
-$confirmacao = false;
+$confirmacao = true;
 
-if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Orçamento', $Vai)) {
+//if (Envia_contato::smtpmailer('antonio.wac@gmail.com', $cliente->dados['email'], $enviador, 'Orçamento', $Vai)) {
     $cliente->gravarCliente();
-    $confirmacao = true;
-    //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
-}
-if (!empty($error)) echo $error;
+//    $confirmacao = true;
+//    //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
+//}
+//if (!empty($error)) echo $error;
 
