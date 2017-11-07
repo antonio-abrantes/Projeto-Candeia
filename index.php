@@ -1,6 +1,7 @@
 <?php
 
 require 'inc/Slim-2.x/Slim/Slim.php';
+
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim();
@@ -38,28 +39,24 @@ $app->get(
     }
 );
 
-//Rota envio do formulario de contato pequeno
+// Rota do envio do formulario de orçamentos
 $app->POST(
-    '/contatomenor-:confirmado',
-    function ($confirmado) {
+    '/cad_orcamento-:valido',
+    function ($valido) {
 
-        require 'inc/email/contato_menor.php';
+        require_once 'inc/email/orcamento.php';
+
+        require_once("view/orcamento.php");
 
     }
 );
 
+//Rota envio do formulario de contato pequeno
 $app->POST(
     '/envio-contato',
     function () {
 
         require 'inc/email/contato_menor.php';
-
-    }
-);
-
-$app->POST(
-    '/contato-maior-:confirmado',
-    function ($confirmado) {
 
     }
 );

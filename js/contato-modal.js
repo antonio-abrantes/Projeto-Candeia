@@ -1,6 +1,6 @@
 $(function () {
 
-    $("#enviar").on('click', function () {
+    $("#enviar-modal").on('click', function () {
         montarJsonContato();
     });
 
