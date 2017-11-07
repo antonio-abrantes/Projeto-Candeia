@@ -2,15 +2,14 @@
 
 header('Content-Type: text/html; charset=utf-8');
 
-require 'inc/classes/Funcoes_auxiliares.php';
-require 'inc/classes/ClienteOrcamento.php';
-require 'Envia_contato.php';
+//require 'inc/classes/Funcoes_auxiliares.php';
+//require 'inc/classes/ClienteOrcamento.php';
+//require 'Envia_contato.php';
 
-    $cliente = new ClienteOrcamento();
+    //$cliente = new ClienteOrcamento();
 
     var_dump($_POST);
     echo '<br>';
-    var_dump($cliente);
 
     /*
 $cliente->dados['nome']         = $_POST["inputNome"];
