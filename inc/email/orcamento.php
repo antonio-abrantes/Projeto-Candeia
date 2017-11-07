@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 require 'inc/classes/Funcoes_auxiliares.php';
 require 'inc/classes/ClienteOrcamento.php';
-require 'Envia_contato.php';
+require 'Envia_orcamento.php';
 
     $cliente = new ClienteOrcamento();
 

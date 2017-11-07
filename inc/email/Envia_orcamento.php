@@ -1,8 +1,8 @@
 <?php
 
-require_once("../email/phpmailer/class.phpmailer.php");
+require_once("inc/email/phpmailer/class.phpmailer.php");
 
-class Envia_contato{
+class Envia_orcamento{
 
     private static $GUSER = ''; //<-- Insira aqui o seu GMail
     private static $GPWD = '';  // <-- Insira aqui a senha do seu GMail
@@ -30,6 +30,6 @@ class Envia_contato{
             $error = 'true';
             return true;
         }
-}
+    }
 
 }
