@@ -45,7 +45,7 @@ $app->POST(
     '/cad-orcamento-:valido',
     function ($valido){
         require_once 'inc/email/orcamento.php';
-        //require_once("view/orcamento.php");
+        require_once("view/orcamento.php");
     }
 );
 
