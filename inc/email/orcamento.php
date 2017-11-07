@@ -8,17 +8,13 @@ require 'Envia_orcamento.php';
 
     $cliente = new ClienteOrcamento();
 
-    var_dump($_POST);
-    echo '<br>';
-    var_dump($cliente);
-
 
 $cliente->dados['nome']         = $_POST["inputNome"];
 $cliente->dados['email']        = $_POST["inputEmail"];
 $cliente->dados['telefone']     = Funcoes_auxiliares::limpaEspacosBranco($_POST["inputTel"]);
 $cliente->dados['cad_data']     = $_POST["inputData"];
 
-/*
+
 $enviador = substr($cliente->dados['nome'], 0, strpos($cliente->dados['nome'], " "));
 
 $cabeçalho = "Data: ".implode("/", array_reverse(explode("-", $cliente->dados['cad_data']))).
@@ -110,5 +106,5 @@ $confirmacao = true;
 //    $confirmacao = true;
 //    //echo "<meta http-equiv='Refresh' content='2;URL=./'>"; // Redireciona para uma página.
 //}
-//if (!empty($error)) echo $error; */
+//if (!empty($error)) echo $error;
 
