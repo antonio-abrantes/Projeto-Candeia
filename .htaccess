@@ -6,6 +6,21 @@ RewriteEngine On
 #
 # RewriteBase /
 
+#<Files *.php>
+#    Order Deny,Allow
+#    Deny from all
+#</Files>
+#
+#<Files index.php>
+#    Order Allow,Deny
+#    Allow from all
+#</Files>
+#
+#<Files contato_menor.php>
+#    Order Allow,Deny
+#    Allow from all
+#</Files>
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
