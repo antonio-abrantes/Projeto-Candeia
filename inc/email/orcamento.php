@@ -36,10 +36,14 @@ if(isset($_POST["opProduto"])){
     array_push($tipoDeProjeto, $_POST["opProduto"]);
 }
 
-$projetos = "\nTipos de projetos\n\n";
+$projetos = "";
 
 foreach ($tipoDeProjeto as $tipo){
-    $projetos .= " # ".$tipo."\n";
+    $projetos .= " * ".$tipo."\n";
+}
+
+if(count($tipoDeProjeto) != 0){
+    $projetos = "\n# Tipos de projetos\n\n".$projetos;
 }
 
 $camposTexto = [];
