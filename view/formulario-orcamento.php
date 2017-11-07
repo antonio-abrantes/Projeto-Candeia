@@ -35,7 +35,7 @@
 
     <div class="container">
         <div id="for-principal">
-            <form action="cad_orcamento-true" method="POST" name="cad-orcamento" id="cad-orcamento" class="">
+            <form action="cad-orcamento-true" method="POST" name="cad-orcamento" id="cad-orcamento" class="">
                 <div class="row">
                     <div id="tit-briefing" class="col-md-3">
                         <h3>BRIEFING DE PROJETO</h3>

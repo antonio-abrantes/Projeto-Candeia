@@ -41,10 +41,12 @@ $app->get(
 
 // Rota do envio do formulario de orçamentos
 $app->POST(
-    '/cad_orcamento-:valido',
+    '/cad-orcamento-:valido',
     function ($valido) {
-        require_once 'inc/email/orcamento.php';
-        require_once("view/orcamento.php");
+
+        var_dump($_POST);
+        //require_once 'inc/email/orcamento.php';
+        //require_once("view/orcamento.php");
     }
 );
 
