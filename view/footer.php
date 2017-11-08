@@ -36,7 +36,7 @@
                             <h5 id="telefone"><a class="fone" href="tel:+5583996122036" >(+55 83) 9 9612-2036</a></h5>
                         </div>
                         <div id="solic-orcamento-ico" class="col-lg-2" style="">
-                            <a href="tel:+5583996122036" class="btn btn-default btn-circle btn-lg"><i style="padding-top: 2px" class="fa fa-whatsapp fa-2x"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=5583996122036&text=Ola!"  class="btn btn-default btn-circle btn-lg"><i style="padding-top: 0" class="fa fa-whatsapp fa-2x"></i></a>
                         </div>
                     </div>
 
@@ -47,11 +47,10 @@
                         </div>
 
                         <div class="col-md-5" style="">
-                            <a href="#" class="btn btn-default btn-circle btn-lg pull-left"><i style="padding-top: 4px" class="fa fa-facebook-f fa-2x"></i></a>
-                            <a style="" href="#" class="insta btn-default btn-circle btn-lg pull-left"><i style="padding-top: 3px" class="fa fa-instagram fa-2x"></i></a>
+                            <a href="https://www.facebook.com/candeiastudio/" target="_blank" class="btn btn-default btn-circle btn-lg pull-left" >
+                                <i style="padding-top: 2px" class="fa fa-facebook-f fa-2x"></i></a>
+                            <a style="" href="https://www.instagram.com/candeiastudio/" target="_blank" class="insta btn-default btn-circle btn-lg pull-left"><i style="padding-top: 1px" class="fa fa-instagram fa-2x"></i></a>
                         </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -62,8 +61,12 @@
 <footer id="rodape">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 text-center">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
                 <p class="p-descricoes">© 2017 Candeia Studio</p>
+            </div>
+            <div class="col-md-4 coded-by" >
+                <a class="" style="text-decoration: none" href="https://tonhus.github.io/" target="_blank">Coded by Antônio Abrantes</a>
             </div>
         </div>
     </div>

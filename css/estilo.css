@@ -406,6 +406,12 @@ body{
     color: #eeffef;
 }
 
+.coded-by{
+    padding-top: 18px;
+    font-size: 10px;
+    text-align: center;
+}
+
     @media (max-width: 994px) {
 
         #slide-principal span.bt-esquerdo{
@@ -472,6 +478,12 @@ body{
             height: 40px;
         }#espaçamento-serv-3 {
             height: 40px;
+        }
+
+        .coded-by{
+            padding-top: 0;
+            font-size: 10px;
+            padding-bottom: 8px;
         }
 
     }
