@@ -30,7 +30,7 @@ class Cliente {
         $created_at = $this->DT->format('Y-m-d H:i:s');
         $updated_at = $this->DT->format('Y-m-d H:i:s');
 
-        $query = "INSERT INTO clientes (nome,email,telefone,cad_data, created_at,updated_at) VALUES ('".$this->dados['nome']."','".$this->dados['email']."','".$this->dados['telefone']."', '".$this->dados['cad_data']."' ,'".$created_at."','".$updated_at."');";
+        $query = "INSERT INTO clientes (nome,email,telefone,cad_data, created_at,updated_at) VALUES ('".utf8_encode($this->dados['nome'])."','".$this->dados['email']."','".$this->dados['telefone']."', '".$this->dados['cad_data']."' ,'".$created_at."','".$updated_at."');";
         $this->sql->query($query);
     }
 
