@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: text/html; charset=utf-8');
+
 class Sql {
 
     public $conn;
@@ -10,11 +12,13 @@ class Sql {
     private $banco_dados = "heroku_113247004c13731";
 
     public function __construct(){
-        return $this->conn = mysqli_connect($this->host, $this->user, $this->password, $this->banco_dados);
+        $this->conn = mysqli_connect($this->host, $this->user, $this->password, $this->banco_dados);
+        $this->conn->set_charset("utf8");
+        return $this->conn;
     }
 
     public function query($string_query){
-
+        
         return mysqli_query($this->conn, $string_query);
     }
 
