@@ -14,7 +14,7 @@ class Sql {
     public function __construct(){
 
         $this->conn = mysqli_connect($this->host, $this->user, $this->password, $this->banco_dados);
-        $this->conn->set_charset("iso-8859-1");
+        $this->conn->set_charset("utf8");
         return $this->conn;
     }
 
