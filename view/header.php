@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="pt-br">
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, text/html;charset=utf-8">
     <title>Candeia Studio</title>
 
     <meta name="description" content="Designers de marca, de interiores e produtos" />
