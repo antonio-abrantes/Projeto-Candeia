@@ -1,6 +1,6 @@
 <?php
 
-header("Content-Type: text/html; charset=iso-8859-1");
+//header("Content-Type: text/html; charset=iso-8859-1");
 
 require '../../inc/classes/Funcoes_auxiliares.php';
 require '../../inc/classes/Cliente.php';
