@@ -3,7 +3,7 @@ Projeto de implementação da home page da Cadeia Studio
 
 <ul>
     <li>Autor: Antônio Abrantes</li>
-    <li>Pagina pessoal: https://tonhus.github.io/</li>
+    <li>Pagina pessoal: https://antonio-abrantes.github.io/</li>
     <li>Data: Outubro de 2017</li>
     <li>Recursos utilizados
         <ul>
